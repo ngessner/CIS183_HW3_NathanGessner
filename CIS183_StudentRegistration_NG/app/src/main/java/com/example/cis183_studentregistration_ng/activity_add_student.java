@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class activity_add_student extends AppCompatActivity
 {
     Button as_btn_j_back;
+    Button as_btn_j_addStudent;
     Intent intent_j_mainmenu;
 
     @Override
@@ -21,14 +22,27 @@ public class activity_add_student extends AppCompatActivity
         setContentView(R.layout.activity_add_student);
 
         as_btn_j_back = findViewById(R.id.as_btn_v_back);
+        as_btn_j_addStudent = findViewById(R.id.as_btn_v_addStudent);
         intent_j_mainmenu = new Intent(activity_add_student.this, MainActivity.class);
 
         backButtonListener();
+        addBtnButtonListener();
     }
 
     private void backButtonListener()
     {
         as_btn_j_back.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(intent_j_mainmenu);
+            }
+        });
+    }
+    private void addBtnButtonListener()
+    {
+        as_btn_j_addStudent.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
