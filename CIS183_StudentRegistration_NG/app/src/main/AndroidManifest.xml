@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CIS183_StudentRegistration_NG"
         tools:targetApi="31">
         <activity
+            android:name=".view_student"
+            android:exported="false" />
+        <activity
             android:name=".activity_add_student"
             android:exported="false" />
         <activity
