@@ -7,9 +7,6 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -24,7 +21,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         ma_btn_j_addNewStudent = findViewById(R.id.ma_btn_v_addNewStudent);
-        intent_j_addNewStudent = new Intent(MainActivity.this, activity_add_student.class);
+        intent_j_addNewStudent = new Intent(MainActivity.this, AddStudent.class);
 
         addNewStudentButtonListener();
     }

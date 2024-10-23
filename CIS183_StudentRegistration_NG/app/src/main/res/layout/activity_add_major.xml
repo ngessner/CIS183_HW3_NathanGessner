@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMajor">
+
+    <Button
+        android:id="@+id/cm_v_btn_addMajor"
+        android:layout_width="158dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#87CEEB"
+        android:text="Add Major"
+        android:textColor="#2C368F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/cm_v_et_major"
+        android:layout_width="217dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cm_v_tv_majorTitle" />
+
+    <Button
+        android:id="@+id/cm_v_btn_back"
+        android:layout_width="158dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#87CEEB"
+        android:text="Back"
+        android:textColor="#2C368F"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/us_v_spinner_major"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <TextView
+        android:id="@+id/cm_v_tv_title"
+        android:layout_height="58dp"
+        android:fontFamily="@font/poppins"
+        android:text="Add New Major"
+        android:textAlignment="center"
+        android:textColor="#4ABEED"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/cm_v_tv_majorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppins"
+        android:text="Enter New Major"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cm_v_tv_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchStudent">
+
+
+    <EditText
+        android:id="@+id/ss_v_et_fname"
+        android:layout_width="217dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/ss_v_tv_nameTitle"
+        app:layout_constraintTop_toBottomOf="@+id/ss_v_tv_title" />
+
+    <TextView
+        android:id="@+id/ss_v_tv_nameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins"
+        android:text="Name:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ss_v_tv_title" />
+
+    <EditText
+        android:id="@+id/ss_v_et_gpa"
+        android:layout_width="217dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="287dp" />
+
+    <TextView
+        android:id="@+id/ss_v_tv_nameTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Username:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <TextView
+        android:id="@+id/us_v_tv_gpa3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Major:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <EditText
+        android:id="@+id/ss_v_et_gpa"
+        android:layout_width="217dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <TextView
+        android:id="@+id/ss_v_tv_nameTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="GPA:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <Spinner
+        android:id="@+id/ss_v_spinner_major"
+        android:layout_width="218dp"
+        android:layout_height="43dp"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <Button
+        android:id="@+id/ss_v_btn_back"
+        android:layout_width="158dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#87CEEB"
+        android:text="Back"
+        android:textColor="#2C368F"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="618dp" />
+
+    <TextView
+        android:id="@+id/ss_v_tv_title"
+        android:layout_height="58dp"
+        android:fontFamily="@font/poppins"
+        android:text="Search Student"
+        android:textAlignment="center"
+        android:textColor="#4ABEED"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <ListView
+        android:layout_width="404dp"
+        android:layout_height="242dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/ss_v_btn_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ss_v_et_gpa"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

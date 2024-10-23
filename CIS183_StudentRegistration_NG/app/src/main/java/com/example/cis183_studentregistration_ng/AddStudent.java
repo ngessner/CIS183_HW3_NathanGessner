@@ -8,7 +8,7 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class activity_add_student extends AppCompatActivity
+public class AddStudent extends AppCompatActivity
 {
     Button as_btn_j_back;
     Button as_btn_j_addStudent;
@@ -23,7 +23,7 @@ public class activity_add_student extends AppCompatActivity
 
         as_btn_j_back = findViewById(R.id.as_btn_v_back);
         as_btn_j_addStudent = findViewById(R.id.as_btn_v_addStudent);
-        intent_j_mainmenu = new Intent(activity_add_student.this, MainActivity.class);
+        intent_j_mainmenu = new Intent(AddStudent.this, MainActivity.class);
 
         backButtonListener();
         addBtnButtonListener();
